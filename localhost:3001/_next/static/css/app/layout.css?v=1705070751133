@@ -1,0 +1,42 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+
+body {
+  font-family: sans-serif, Work Sans, Avenir Next, Roboto, poppins;
+  letter-spacing: 0.1rem;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+}
+
+a,
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+/* html {
+  @media(max-width:1200px) {
+    font-size: 30%;
+}
+} */
+  /* html {
+@media (max-width:75rem) {
+      font-size: 79%;
+  }
+@media (max-width:63rem) {
+    font-size: 68%;
+}
+@media (max-width:47rem) {
+  font-size: 60%;
+}
+} 
+  html {
+@media (max-width: 75rem) {
+    font-size: 56.25%;
+  }
+  @media (max-width: 59rem) {
+    font-size: 50%;
+  }
+
+}*/

@@ -1,0 +1,72 @@
+.side-nav {
+    border: 0.1px rgba(128, 128, 128, 0.233) solid;
+    box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+    width: 25%;
+    height: 100%;
+    padding: 1.8rem 0rem;
+    display: grid;
+    // grid-gap: 1.7rem;
+    font-size: 15px;
+    font-weight: 400;
+    position: sticky;
+    z-index: 1;
+    letter-spacing: 0.6px;
+    background-color: white;
+    // font-family: Work Sans;
+    p {
+        margin: 1.4rem 2rem 0.2rem 1.2rem;
+        color: #545F7D;
+        font-weight: 500;
+    }
+    span {
+        margin-left: 0.8rem;
+        color: #213F7D;
+        font-weight: 400;
+        opacity: 70%;
+        cursor: pointer;
+    }
+    // span:hover {
+    //     opacity: 100%;
+    //     font-weight: 600;
+    //     }
+    }
+
+@media(max-width:940px){
+    .showSideNav {
+        display: grid;
+        width: 18rem;
+    }
+    .hideSideNav {
+        display: none;
+    }    
+        }
+        
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.9rem;
+}
+.nav-link:hover {
+    background-color: #39cdcd2f;
+    span{
+    opacity: 100%;
+    font-weight: 600;
+    }
+}
+#dropdown {
+    margin-left: 0.4rem;
+}
+
+    #line {
+        color: #545F7D;
+        height: 0.01px;
+        // width: 128%;
+        width: 100%;
+        // margin: 5rem 0 0 -2rem;
+        margin-top: 5rem;
+        opacity: 40%;
+    }
+    #dashboard {
+        margin-bottom: -0.5rem;
+        margin-top: 0.8rem
+    }

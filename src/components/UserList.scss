@@ -1,0 +1,27 @@
+
+.user-body {
+    width: 100%;
+    height: auto;
+    border: 0.05px rgba(128, 128, 128, 0.233) solid;
+    box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+    margin: 2rem 0;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    span {
+        font-size: 12px;
+        font-weight: 600;
+        color: #545F7D;
+    }
+    th {
+    display: flex;
+    align-content: center;
+    gap: 0.5rem;
+    }
+}

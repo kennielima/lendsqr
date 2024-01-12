@@ -1,0 +1,352 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/components/Login.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.body {
+  margin: 8rem 9rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  font-family: Avenir Next;
+}
+
+.imagediv {
+  width: 50%;
+  display: grid;
+  grid-gap: 6rem;
+  gap: 6rem;
+  margin-left: -5rem;
+}
+@media (max-width: 800px) {
+  .imagediv {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .imagediv {
+    margin-left: -9rem;
+  }
+}
+
+#logo {
+  height: 1.9rem;
+  margin: -5rem 0 5rem 2rem;
+}
+
+#logo2 {
+  display: none;
+  height: 1.9rem;
+  margin: -5rem 0 9rem 0;
+}
+@media (max-width: 800px) {
+  #logo2 {
+    display: flex;
+  }
+}
+
+#hero {
+  height: 90%;
+}
+@media (max-width: 1200px) {
+  #hero {
+    height: 70%;
+    margin-left: -3rem;
+  }
+}
+@media (max-width: 956px) {
+  #hero {
+    height: 60%;
+    margin-left: -5rem;
+  }
+}
+
+.formdiv {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  .formdiv {
+    width: 70%;
+    margin-left: -2rem;
+  }
+}
+@media (max-width: 800px) {
+  .formdiv {
+    display: grid;
+    width: 80%;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+}
+
+.form {
+  display: grid;
+  grid-gap: 1.5rem;
+  margin: auto;
+}
+.form input {
+  width: 447px;
+  height: 48px;
+  border-radius: 5px;
+  border: 2px rgb(227, 227, 227) solid;
+}
+@media (max-width: 480px) {
+  .form input {
+    width: 300px;
+  }
+}
+.form button {
+  background-color: #39CDCC;
+  color: white;
+  width: 456px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+@media (max-width: 480px) {
+  .form button {
+    width: 300px;
+  }
+}
+
+.form,
+#enter,
+#welcome {
+  width: 90%;
+}
+
+#welcome {
+  font-size: 40px;
+  font-weight: 700;
+  margin: auto;
+  color: #213F7D;
+}
+
+#enter {
+  font-size: 15px;
+  color: #545F7D;
+  margin: 0.4rem auto 2rem auto;
+}
+
+#forgot {
+  margin: 0;
+  color: #39CDCC;
+  font-weight: 600;
+  font-size: 12px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/components/Header.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header-main {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  border: 0.1px rgba(128, 128, 128, 0.233) solid;
+  box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+  visibility: 30%;
+  margin-left: -8rem;
+}
+@media (max-width: 1100px) {
+  .search-div {
+    margin-left: 0;
+  }
+}
+@media (max-width: 940px) {
+  .search-div {
+    display: none;
+  }
+}
+.search-div .search-input {
+  width: 350px;
+  height: 40px;
+  border-radius: 6px 0 0 6px;
+  border: 0.5px grey solid;
+  padding-left: 10px;
+}
+.search-div input::placeholder {
+  opacity: 0.8;
+}
+.search-div .search-button {
+  border-radius: 0px 6px 6px 0;
+  border: 0.5px grey solid;
+  background-color: #39CDCC;
+  height: 43px;
+  width: 43px;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: Roboto;
+  color: #213F7D;
+  padding-right: 3rem;
+}
+.nav-right #ddown {
+  margin-left: -1rem;
+}
+
+#menu {
+  display: none;
+}
+@media (max-width: 940px) {
+  #menu {
+    display: flex;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/components/SideNav.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.side-nav {
+  border: 0.1px rgba(128, 128, 128, 0.233) solid;
+  box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+  width: 25%;
+  height: 100%;
+  padding: 3rem 0rem;
+  display: grid;
+  font-size: 15px;
+  font-weight: 400;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  letter-spacing: 1px;
+  background-color: white;
+}
+.side-nav p {
+  margin: 1.4rem 2rem 0.4rem 2rem;
+  color: #545F7D;
+  font-weight: 500;
+}
+.side-nav span {
+  margin-left: 0.8rem;
+  color: #213F7D;
+  font-weight: 400;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+@media (max-width: 940px) {
+  .showSideNav {
+    display: grid;
+    width: 18rem;
+  }
+  .hideSideNav {
+    display: none;
+  }
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.nav-link:hover {
+  background-color: rgba(57, 205, 205, 0.1843137255);
+}
+
+#dropdown {
+  margin-left: 0.4rem;
+}
+
+#line {
+  color: #545F7D;
+  height: 0.01px;
+  width: 100%;
+  margin-top: 5rem;
+  opacity: 40%;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/components/Home.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.home {
+  display: flex;
+  position: relative;
+}
+
+.userpage {
+  margin: 2rem 3rem;
+  width: 100%;
+  letter-spacing: 1px;
+}
+@media (max-width: 940px) {
+  .userpage {
+    position: absolute;
+    z-index: 0;
+    width: 90%;
+    margin: 2rem 3rem;
+  }
+}
+
+#hdr {
+  font-size: 24px;
+  font-weight: 500;
+  color: #213F7D;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 700px) {
+  .tabs {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+.tabs .users {
+  font-weight: 500;
+  font-size: 14px;
+  color: #545F7D;
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  .tabs .users {
+    font-size: 10px;
+  }
+}
+.tabs .numbers {
+  font-weight: 600;
+  font-size: 24px;
+  color: #213F7D;
+  margin: 0;
+}
+
+.tab {
+  display: grid;
+  width: 28%;
+  height: 10rem;
+  border: 0.05px rgba(128, 128, 128, 0.233) solid;
+  box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+  padding: 1rem 1rem 0rem 2rem;
+}
+@media (max-width: 700px) {
+  .tab {
+    width: 60%;
+  }
+}
+
+.userlist {
+  width: 100%;
+  height: auto;
+  border: 0.05px rgba(128, 128, 128, 0.233) solid;
+  box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+}
+
+.headers {
+  display: flex;
+}

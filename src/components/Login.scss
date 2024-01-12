@@ -1,0 +1,118 @@
+.body {
+    margin: 8rem 9rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 8rem;
+    font-family: Avenir Next;
+}
+
+.imagediv {
+    width: 50%;
+    display: grid;
+    gap: 6rem;
+    margin-left: -5rem;
+    @media(max-width: 800px) {
+        display: none;
+    }
+    @media(max-width: 1200px) {
+        margin-left: -9rem;
+    }
+}
+
+#logo {
+    height: 1.9rem;
+    margin: -5rem 0 5rem 2rem;
+}
+
+#logo2 {
+    display: none;
+    height: 1.9rem;
+    margin: -5rem 0 9rem 0;
+    @media(max-width: 800px) {
+        display: flex;
+    }
+}
+
+#hero {
+    height: 90%;
+
+    @media(max-width: 1200px) {
+        height: 70%;
+        margin-left: -3rem;
+    }
+    @media(max-width: 956px) {
+        height: 60%;
+        margin-left: -5rem;
+    }
+}
+
+.formdiv {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+
+    @media(max-width: 1000px) {
+        width: 70%;
+        margin-left: -2rem;
+    }
+    @media(max-width: 800px) {
+        display: grid;
+        width: 80%;
+        justify-content: center;
+        margin-left: 0rem;
+    }
+}
+.form {
+    display: grid;
+    grid-gap: 1.5rem;
+    margin: auto;
+
+    input {
+        width: 447px;
+        height: 48px;
+        border-radius: 5px;
+        border: 2px rgb(227, 227, 227) solid;
+        @media(max-width: 480px) {
+            width: 300px;
+        }
+    }
+
+    button {
+        background-color: #39CDCC;
+        color: white;
+        width: 456px;
+        height: 48px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+    @media(max-width: 480px) {
+        width: 300px;
+    }
+    }
+}
+.form,
+#enter,
+#welcome {
+    width: 90%;
+}
+
+#welcome {
+    font-size: 40px;
+    font-weight: 700;
+    margin: auto;
+    color: #213F7D;
+}
+
+#enter {
+    font-size: 15px;
+    color: #545F7D;
+    margin: 0.4rem auto 2rem auto;
+}
+
+#forgot {
+    margin: 0;
+    color: #39CDCC;
+    font-weight: 600;
+    font-size: 12px;
+}
