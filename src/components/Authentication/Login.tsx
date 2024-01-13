@@ -1,9 +1,10 @@
 "use client"
 import { Fragment, useContext, useRef, useState } from 'react';
 import './Login.scss'
-import textContext from './Context';
-import Home from './Home';
+import textContext from '../ContextProvider/Context';
+import Home from '../Home';
 import Image from 'next/image';
+import UserData from '../UserData';
 
 const Login = () => {
   const [email, setEmail] = useState<string>('');
@@ -66,7 +67,7 @@ const Login = () => {
           </div>
         </div>
       }
-      {ctx.loggedin && <Home />}
+      {ctx.loggedin && <UserData />}
     </Fragment>
   )
 }

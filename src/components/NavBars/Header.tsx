@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React, { useContext, useState } from 'react'
 import './Header.scss'
-import textContext from './Context'
+import textContext from '../ContextProvider/Context'
 const Header = () => {
     const ctx = useContext(textContext);
     const [openNav, setOpenNav] = useState(false);
@@ -12,7 +12,7 @@ const Header = () => {
     }
     return (
         <header className='header-main'>
-            <Image src='logo.svg' alt='' height={120} width={120} />
+            <Image src='/logo.svg' alt='logo' height={120} width={120} />
             <div className='search-div'>
                 <input placeholder='search for anything' className='search-input' />
                 <button type='submit' className='search-button'>

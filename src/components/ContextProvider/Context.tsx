@@ -16,14 +16,11 @@ export function ContextProvider(props: any) {
     const [loggedin, setLoggedin] = useState(false);
     const [mail, setMail] = useState('');
     const [pw, setPw] = useState('');
-    console.log(loggedin)
 
     const reducer = (state: boolean, action: boolean | any) => {
         switch (action.type) {
             case 'click':
                 return !state;
-            // case 'logout':
-            //     return false;
             default:
                 return state;
         }

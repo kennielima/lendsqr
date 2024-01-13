@@ -1,0 +1,63 @@
+.org {
+    position: absolute;
+    top: 3.5rem;
+    left: 1.5rem;
+    z-index: 1;
+    height: auto;
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    background-color: white;
+    border: 0.05px rgba(128, 128, 128, 0.233) solid;
+    box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+    border-radius: 4px;
+    
+    .input-div {
+        display: grid;
+        label, button {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            color: #545F7D;
+            font-weight: 500;
+            padding: 0.5rem 0 0.3rem 0;
+        }
+        input, select {
+        width: 12rem;
+        padding: 10px;
+        border: 1px rgba(128, 128, 128, 0.443) solid;
+        border-radius: 4px;
+        &::placeholder {
+            color: #545f7d8a;
+            letter-spacing: 0.9px;
+        }
+        }
+        select {
+            width: 13.5rem;
+            color: #545f7d8a;
+            letter-spacing: 0.9px;
+        }
+    }
+
+    #buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    button {
+        width: 6rem;
+        height: 2.3rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #filter {
+        background-color: #39CDCC;
+        color: white;
+    }
+    #reset {
+        background-color: white;
+        color: #545F7D;
+        border: 0.2px #545F7D solid;
+    }
+}
+

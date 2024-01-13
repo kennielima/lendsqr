@@ -1,12 +1,13 @@
 import './SideNav.scss';
 import Image from 'next/image';
-import textContext from './Context';
+import textContext from '../ContextProvider/Context';
 import { useContext } from 'react';
+import Link from 'next/link';
 
 function SideNav() {
     const ctx = useContext(textContext);
     return (
-        <div className={ctx.click ? 'side-nav showSideNav' : 'side-nav hideSideNav' }>
+        <div className={ctx.click ? 'side-nav showSideNav' : 'side-nav hideSideNav'}>
             <div className='nav-link'>
                 <Image src='/briefcase.svg' alt='' className='logo' height={14} width={16} />
                 <span style={{ opacity: '100%' }}>Switch Organization</span>
@@ -17,10 +18,12 @@ function SideNav() {
                 <span>Dashboard</span>
             </div>
             <p>CUSTOMERS</p>
-            <div className='nav-link'>
-                <Image src='/user-friends.svg' alt='' className='logo' height={14} width={16} />
-                <span>Users</span>
-            </div>
+            <Link href='/'>
+                <div className='nav-link'>
+                    <Image src='/user-friends.svg' alt='' className='logo' height={14} width={16} />
+                    <span>Users</span>
+                </div>
+            </Link>
             <div className='nav-link'>
                 <Image src='/users.svg' alt='' className='logo' height={14} width={16} />
                 <span>Guarantor</span>
@@ -103,12 +106,12 @@ function SideNav() {
                 <span>Audit Logs</span>
             </div>
 
-            <hr id='line'/>
+            <hr id='line' />
             <div className='nav-link'>
                 <Image src='/sign-out.svg' alt='' className='logo' height={14} width={16} />
                 <span onClick={ctx.onLogout}>Log out</span>
             </div>
-            <span style={{fontSize:'12px', marginTop: '2rem'}}>v1.2.0</span>
+            <span style={{ fontSize: '12px', marginTop: '2rem' }}>v1.2.0</span>
         </div>
     )
 }

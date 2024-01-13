@@ -1,0 +1,43 @@
+#USERS {
+    font-size: 24px;
+    font-weight: 500;
+    color: #213F7D;
+}
+.tabs {
+    display: flex;
+    gap: 1rem;
+    @media(max-width:700px){
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+ .users {
+    font-weight: 500;
+    font-size: 14px;
+    color: #545F7D;
+    margin: 0;
+    padding: 0;
+    @media(max-width:1200px){
+        font-size: 10px;
+    }
+ }   
+ .numbers {
+    font-weight: 600;
+    font-size: 24px;
+    color: #213F7D;
+    margin: 0;
+    padding: 0;
+ }   
+}
+.tab {
+    display: grid;
+    width: 28%;
+    height: 10rem;
+    border: 0.05px rgba(128, 128, 128, 0.233) solid;
+    box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+    border-radius: 4px;
+    padding: 1rem 1rem 0rem 2rem;
+    @media(max-width:700px){
+        width: 60%;
+    }
+}
+

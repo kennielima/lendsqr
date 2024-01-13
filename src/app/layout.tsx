@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { ContextProvider } from '@/components/Context'
+import { ContextProvider } from '@/components/ContextProvider/Context'
 
 
 export const metadata: Metadata = {
