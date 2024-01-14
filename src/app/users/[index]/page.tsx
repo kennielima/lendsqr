@@ -1,7 +1,7 @@
 "use client"
-import Home from '@/components/Home';
+import Home from '@/components/Template/Home';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
+import { useParams } from 'react-router-dom';
 import React from 'react'
 import './page.scss';
 import Link from 'next/link';
@@ -26,9 +26,184 @@ function page() {
             <button id='active'>Activate User</button>
           </div>
         </div>
-        
+
+
         <div className='summary'>
-          ss
+
+          <div className='image-div'>
+            <div id='avi'><Image src='/avi.svg' alt='' height={100} width={100} /></div>
+
+            <div>
+              <h3>Grace </h3>
+              <p id='code'>LSQFf587g90</p>
+            </div>
+
+            <hr />
+
+            <div>
+              <p id='tier'>User’s Tier</p>
+              <div id='images'>
+                <Image src='/star.svg' alt='' height={15} width={15} />
+                <Image src='/star2.svg' alt='' height={15} width={15} />
+                <Image src='/star2.svg' alt='' height={15} width={15} />
+              </div>
+            </div>
+
+            <hr />
+
+            <div>
+              <h3>₦200,000.00</h3>
+              <p id='bank'>9912345678/Providus Bank</p>
+            </div>
+          </div>
+
+          <div className='headings'>
+            <p id='general'>General Details<span></span></p>
+            <p>Documents</p>
+            <p>Bank Details</p>
+            <p>Loans</p>
+            <p>Savings</p>
+            <p>App and System</p>
+          </div>
+        </div>
+
+        <div className='detail-body'>
+          <div className='section'>
+            <h4>Personal Information</h4>
+            <div className='section-div'>
+              <div className='info-div'>
+                <p className='info-hdr'>FULL NAME</p>
+                <p className='info'>Grace</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>PHONE NUMBER</p>
+                <p className='info'>Grace</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>EMAIL ADDRESS</p>
+                <p className='info'>Grace</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>BVN</p>
+                <p className='info'>Grace</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>GENDER</p>
+                <p className='info'>Grace</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>MARITAL STATUS</p>
+                <p className='info'>Single</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>CHILDREN</p>
+                <p className='info'>None</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>TYPE OF RESIDENCE</p>
+                <p className='info'>Parent's Apartment</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div id='section'>
+            <h4>Education and Employment</h4>
+            <div className='section-div'>
+              <div className='info-div'>
+                <p className='info-hdr'>LEVEL OF EMPLOYMENT</p>
+                <p className='info'>B.Sc</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>EMPLOYMENT STATUS</p>
+                <p className='info'>Employed</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>SECTOR OF EMPLOYMENT</p>
+                <p className='info'>FinTech</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>DURATION OF EMPLOYMENT</p>
+                <p className='info'>2 years</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>OFFICE EMAIL</p>
+                <p className='info'>Grace@lendsqr.com</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>MONTHLY INCOME</p>
+                <p className='info'>₦200,000.00- ₦400,000.00</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>LOAN REPAYMENT</p>
+                <p className='info'>40,000</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>TYPE OF RESIDENCE</p>
+                <p className='info'>Parent's Apartment</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div id='section'>
+            <h4>Socials</h4>
+            <div className='section-div'>
+              <div className='info-div'>
+                <p className='info-hdr'>TWITTER</p>
+                <p className='info'>@lendsqr</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>FACEBOOK</p>
+                <p className='info'>lendsqr</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>INSTAGRAM</p>
+                <p className='info'>@lendsqr</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div id='section'>
+            <h4>Guarantor</h4>
+            <div className='section-div'>
+              <div className='info-div'>
+                <p className='info-hdr'>FULL NAME</p>
+                <p className='info'>DEBBY OGANA</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>PHONE NUMBER</p>
+                <p className='info'>Grace</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>EMAIL ADDRESS</p>
+                <p className='info'>Grace@gmail.com</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>BVN</p>
+                <p className='info'>Grace</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>RELATIONSHIP</p>
+                <p className='info'>SISTER</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>MARITAL STATUS</p>
+                <p className='info'>Single</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>CHILDREN</p>
+                <p className='info'>None</p>
+              </div>
+              <div className='info-div'>
+                <p className='info-hdr'>TYPE OF RESIDENCE</p>
+                <p className='info'>Parent's Apartment</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Home>

@@ -19,7 +19,7 @@ function SideNav() {
             </div>
             <p>CUSTOMERS</p>
             <Link href='/'>
-                <div className='nav-link'>
+                <div className='nav-link user-span'>
                     <Image src='/user-friends.svg' alt='' className='logo' height={14} width={16} />
                     <span>Users</span>
                 </div>

@@ -2,7 +2,7 @@
 import { Fragment, useContext, useRef, useState } from 'react';
 import './Login.scss'
 import textContext from '../ContextProvider/Context';
-import Home from '../Home';
+import Home from '../Template/Home';
 import Image from 'next/image';
 import UserData from '../UserData';
 
@@ -32,7 +32,7 @@ const Login = () => {
 
   return (
     <Fragment>
-      {!ctx.loggedin &&
+      {ctx.loggedin === false &&
         <div className='body'>
           <div className='imagediv'>
             <Image src='logo.svg' alt='' id='logo' height={200} width={200} />

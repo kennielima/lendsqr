@@ -1,5 +1,5 @@
 import React from 'react'
-import DATA from './Generated.json'
+import DATA from './utils/Generated.json'
 import './Filter.scss';
 
 function Organization() {

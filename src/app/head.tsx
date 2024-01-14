@@ -1,12 +1,10 @@
-import logo from 'logo.svg';
-
 export default function Head() {
     return (
       <>
-        <title>Lendsqr</title>
+        <title>Lendsqr: Empowering the smartest lenders</title>
         <link
           rel="icon"
-          href='logo'
+          href='/lendsqr_logo.jpeg'
           />
       </>
     )

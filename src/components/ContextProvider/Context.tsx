@@ -4,7 +4,7 @@ import React, { useState, useEffect, useReducer } from 'react';
 type props = {
     onLogin: (email: string, password: string) => void,
     onLogout: () => void;
-    loggedin: boolean,
+    loggedin: boolean | null,
     mail: string,
     pw: string
     click: boolean,
@@ -13,7 +13,7 @@ type props = {
 const textContext = React.createContext({} as props);
 
 export function ContextProvider(props: any) {
-    const [loggedin, setLoggedin] = useState(false);
+    const [loggedin, setLoggedin] = useState<null | boolean>(null);
     const [mail, setMail] = useState('');
     const [pw, setPw] = useState('');
 

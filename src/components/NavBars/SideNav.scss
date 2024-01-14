@@ -46,12 +46,13 @@
     align-items: center;
     padding: 0.9rem;
 }
-.nav-link:hover {
+// .nav-link:hover {
+.user-span {
     background-color: #39cdcd2f;
     span{
-    opacity: 100%;
-    font-weight: 600;
-    }
+        opacity: 100%;
+        font-weight: 600;
+        }
 }
 #dropdown {
     margin-left: 0.4rem;

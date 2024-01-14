@@ -27,7 +27,7 @@ const Header = () => {
                     <p className='avi'>Adedeji</p>
                     <Image src='/ddown.svg' className='avi' id='ddown' alt='' height={10} width={10} />
                 </div>
-                <Image src={openNav ? 'close.svg' : 'menu.svg'} id='menu' onClick={toggleNav} alt='' height={25} width={25} />
+                <Image src={openNav ? '/close.svg' : '/menu.svg'} id='menu' onClick={toggleNav} alt='' height={25} width={25} />
             </div>
         </header>
     )
