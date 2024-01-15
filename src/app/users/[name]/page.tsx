@@ -1,14 +1,20 @@
 "use client"
+// import { useRouter } from 'next/router';
 import Home from '@/components/Template/Home';
 import Image from 'next/image';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'next/navigation';
 import React from 'react'
 import './page.scss';
 import Link from 'next/link';
+// import DATA from '...//utils/Generated.json'
 
 function page() {
-  const user = decodeURIComponent(useParams()?.index as any);
-  console.log(user)
+  const username = decodeURIComponent(useParams()?.name as any);
+  // const router = useRouter();
+  // const { name } = router.query;
+  // const decodedName = decodeURIComponent(name as string);
+
+  // console.log(DATA)
   return (
     <Home>
       <div className='main-div'>

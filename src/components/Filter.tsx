@@ -2,10 +2,13 @@ import React from 'react'
 import DATA from './utils/Generated.json'
 import './Filter.scss';
 
-function Organization() {
+type props = {
+    hide: () => void;
+}
+function Organization({hide}: props) {
     const status = ['Active', 'Inactive', 'Pending', 'Blacklisted']
     return (
-        <form className='org'>
+        <form className='org' onMouseLeave={hide}>
             <div className='input-div'>
                 <label>Organization</label>
                 <select>

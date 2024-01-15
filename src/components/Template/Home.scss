@@ -1,9 +1,11 @@
 .home {
     display: flex;
-    overflow: hidden;
+    // overflow: hidden;
     // height: auto;
 }
 .user-main {
+    // overflow: hidden;
+    position: relative;
     margin: 1rem 3rem;
     width: 100%;
     height: 40rem;

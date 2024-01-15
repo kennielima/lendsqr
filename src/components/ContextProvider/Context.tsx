@@ -13,7 +13,7 @@ type props = {
 const textContext = React.createContext({} as props);
 
 export function ContextProvider(props: any) {
-    const [loggedin, setLoggedin] = useState<null | boolean>(null);
+    const [loggedin, setLoggedin] = useState(false);
     const [mail, setMail] = useState('');
     const [pw, setPw] = useState('');
 
@@ -49,6 +49,7 @@ export function ContextProvider(props: any) {
     }
     function onLogout () {
         setLoggedin(false)
+        localStorage.removeItem('loggedin');
     }
 
         return (

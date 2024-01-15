@@ -73,9 +73,16 @@
         height: 48px;
         border-radius: 5px;
         border: 2px rgb(227, 227, 227) solid;
+        padding-left: 1rem;
         @media(max-width: 480px) {
             width: 300px;
         }
+    }
+    input::placeholder {
+        color: #545F7D;
+        opacity: 60%;
+        font-family: Avenir Next;
+        font-size: 14px;
     }
 
     button {
@@ -87,6 +94,7 @@
         border-radius: 8px;
         font-weight: 600;
         font-size: 14px;
+        letter-spacing: 2px;
     @media(max-width: 480px) {
         width: 300px;
     }
@@ -111,9 +119,19 @@
     margin: 0.4rem auto 2rem auto;
 }
 
-#forgot {
+.forgot {
     margin: 0;
     color: #39CDCC;
     font-weight: 600;
     font-size: 12px;
+    letter-spacing: 1px;
+}
+#pword{
+    position: relative;
+}
+.show {
+    position: absolute;
+    right: 1rem; 
+    top: 1.2rem;
+    cursor: pointer;
 }

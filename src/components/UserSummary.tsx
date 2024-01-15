@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function UserSummary() {
   return (
-    <Fragment>
+    <div id='summary-main'>
     <h2 id='USERS'> Users </h2>
     <div className='tabs'>
       <div className='tab'>
@@ -28,7 +28,7 @@ function UserSummary() {
         <p className='numbers'>102,453</p>
       </div>
     </div>
-  </Fragment>  
+  </div>  
   )
 }
 
