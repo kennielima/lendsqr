@@ -33,7 +33,7 @@ function page() {
                 <div className='summary'>
                     <div className='image-div'>
                         <div id='avi'>
-                            <Image src='/avi.svg' alt='' height={100} width={100} />
+                            <Image src={`${user?.picture}`} alt='' height={110} width={110} />
                         </div>
 
                         <div>
