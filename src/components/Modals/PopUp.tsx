@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { data } from './UserData';
+import { data } from '../Homepage/UserData';
 import './PopUp.scss';
 
 type props = {

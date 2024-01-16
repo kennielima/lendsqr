@@ -16,7 +16,7 @@ const Header = () => {
             <div className='search-div'>
                 <input placeholder='search for anything' className='search-input' />
                 <button type='submit' className='search-button'>
-                    <Image src='/search.png' alt='' height={15} width={15} />
+                    <Image src='/search.svg' alt='' height={15} width={15} />
                 </button>
             </div>
             <div className='right'>

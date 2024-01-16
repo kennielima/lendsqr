@@ -39,7 +39,9 @@
     background-color: #39CDCC;
     height: 43px;
     width: 43px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 }
 
@@ -71,8 +73,3 @@
         display: flex;
         } 
 }
-// .avi {
-//     @media(max-width:940px){
-//         display: none;
-//     }        
-// }

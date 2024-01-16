@@ -1,5 +1,5 @@
 "use client"
-import Home from '@/components/Template/Home';
+import Home from '@/components/Layout/Home';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import './page.scss';

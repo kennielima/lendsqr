@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import Header from '../NavBars/Header'
-import SideNav from '../NavBars/SideNav';
+import Header from '../Navigation/Header'
+import SideNav from '../Navigation/SideNav';
 import './Home.scss';
 
 <style>
@@ -14,10 +14,13 @@ function Home(props: any) {
   return (
     <Fragment>
       <Header />
+
       <div className='home'>
         <SideNav />
+
         <main className='user-main'>
           {props.children}
+          
         </main>
       </div>
     </Fragment>

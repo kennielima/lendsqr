@@ -3,7 +3,7 @@ import { Fragment, useContext, useEffect, useRef, useState } from 'react';
 import './Login.scss'
 import textContext from '../ContextProvider/Context';
 import Image from 'next/image';
-import UserData from '../UserData';
+import UserData from '../Homepage/UserData';
 
 const Login = () => {
   const [email, setEmail] = useState<string>('');

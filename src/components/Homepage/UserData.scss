@@ -9,7 +9,7 @@
     margin: 2rem 0;
     text-align: start;
     // width: auto;
-    overflow: scroll;
+    overflow-y: scroll;
     padding-bottom: 0rem;
     a {
         text-decoration: none; 
@@ -52,7 +52,6 @@
         font-size: 12px;
         font-weight: 600;
     }
-
 }
 #liner {
     color: #545F7D;
@@ -87,26 +86,4 @@
     color: #545F7D;
 }
 
-
-
-.pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    #select-div {
-    letter-spacing: 0.3px;
-        display: flex;
-        font-weight: 400;
-        font-size: 14px;
-    }
-    #select {
-        margin: -3px 7px 0 7px;
-        padding: 0 10px;
-        font-weight: 500;
-        height: 1.6rem;
-        background-color: #545f7d41;
-        border: none;
-        border-radius: 4px;
-    }
-}
 

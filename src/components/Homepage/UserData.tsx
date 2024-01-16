@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import React, { Fragment, useState } from 'react'
 import './UserData.scss';
-import DATA from './utils/Generated.json'
-import Filter from './Filter';
-import Home from './Template/Home';
+import DATA from '../utils/Generated.json'
+import Filter from '../Modals/Filter';
+import Home from '../Layout/Home';
 import UserSummary from './UserSummary';
 import Link from 'next/link';
-import PopUp from './PopUp';
+import PopUp from '../Modals/PopUp';
+import Pagination from '../Pagination/Pagination';
 
 export interface data {
     company: string;
@@ -18,8 +19,13 @@ export interface data {
 }
 
 function UserList() {
-    // const [currPage, setCurrentPage] = useState(1);
-    // const [post, setPost] = useState(1);
+    const [currentPage, setCurrentPage] = useState<number>(1);
+    const [postsPerPage, setPostsPerPage] = useState<number>(10);
+    const lastPostIndex: number = currentPage * postsPerPage;
+    const firstPostIndex = lastPostIndex - postsPerPage;
+    const currentPosts = DATA.slice(firstPostIndex, lastPostIndex)
+
+
     const [showModal, setShowModal] = useState(false);
     const [openIndexPopUp, setOpenIndexPopUp] = useState<number | null>(null);
     const showModalFn = () => { setShowModal(!showModal) }
@@ -28,10 +34,11 @@ function UserList() {
         setOpenIndexPopUp(openIndexPopUp === index ? null : index)
     };
     const hidePopUp = () => { setOpenIndexPopUp(null) };
+
+
     return (
         <Home>
             <UserSummary />
-            {/* <div className='user-body'> */}
             {showModal && <Filter hide={hideModalFn} />}
             <table className='user-table'>
                 <thead>
@@ -73,11 +80,11 @@ function UserList() {
                     </tr>
                 </thead>
                 <tbody>
-                    {DATA.map((data: data, index: number) => (
+                    {currentPosts.map((data: data, index: number) => (
                         <Fragment>
                             <tr className='table-row' key={index}>
                                 <td style={{ width: '17%' }}>
-                                <Link href={`/users/${data.name}`}>{data.company}</Link>
+                                    <Link href={`users/${data.name}`}>{data.company}</Link>
                                 </td>
                                 <td style={{ width: '14%' }}>
                                     <Link href={`users/${data.name}`}>{data.name}</Link>
@@ -104,39 +111,19 @@ function UserList() {
                                     {openIndexPopUp === index && <PopUp index={index} data={data} hide={hidePopUp} />}
                                 </td>
                             </tr>
-                            <tr>
-                                <td><hr id='liner' /></td>
-                            </tr>
+                            <hr id='liner' />
                         </Fragment>
                     ))}
                 </tbody>
             </table>
 
+            <Pagination
+                totalPosts={DATA.length}
+                postsPerPage={postsPerPage}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
+            />
 
-            <div className='pagination'>
-                <div id='select-div'>
-                    Showing
-                    <select id='select'>
-                        <option value='10'>10</option>
-                        <option value='20'>20</option>
-                        <option value='30'>30</option>
-                        <option value='40'>40</option>
-                        <option value='50'>50</option>
-                        <option value='60'>60</option>
-                        <option value='70'>70</option>
-                        <option value='80'>80</option>
-                        <option value='90'>90</option>
-                        <option value='100'>100</option>
-                    </select>
-                    out of 100
-                </div>
-                <div>
-                    <Image src='prev-btn.svg' alt='' height={25} width={25} />
-                    <span></span>
-                    <Image src='next-btn.svg' alt='' height={25} width={25} />
-                </div>
-            </div>
-            {/* </div> */}
         </Home>
     )
 }
