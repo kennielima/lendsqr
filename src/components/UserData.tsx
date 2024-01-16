@@ -77,7 +77,7 @@ function UserList() {
                         <Fragment>
                             <tr className='table-row' key={index}>
                                 <td style={{ width: '17%' }}>
-                                <Link href="/users/[name]" as={`/users/${data.name}`}>{data.company}</Link>
+                                <Link href={`/users/${data.name}`}>{data.company}</Link>
                                 </td>
                                 <td style={{ width: '14%' }}>
                                     <Link href={`users/${data.name}`}>{data.name}</Link>

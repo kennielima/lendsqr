@@ -10,8 +10,7 @@ type props = {
     hide: () => void;
   }
   function PopUp({ index, data, hide }: props) {
-
-console.log(data.status)
+    console.log(data.status)
 
     return (
         <div className='view' onMouseLeave={hide}>
