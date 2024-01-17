@@ -62,11 +62,11 @@ function page() {
 
                     <div className='headings'>
                         <p id='general'>General Details<span></span></p>
-                        <p>Documents</p>
-                        <p>Bank Details</p>
-                        <p>Loans</p>
-                        <p>Savings</p>
-                        <p>App and System</p>
+                        <p className='other-hdrs'>Documents</p>
+                        <p className='other-hdrs'>Bank Details</p>
+                        <p className='other-hdrs'>Loans</p>
+                        <p className='other-hdrs'>Savings</p>
+                        <p className='other-hdrs'>App and System</p>
                     </div>
                 </div>
 

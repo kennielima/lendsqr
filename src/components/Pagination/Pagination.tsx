@@ -32,7 +32,7 @@ function Pagination({ totalPosts, postsPerPage, setCurrentPage, currentPage }: p
 
             <div id='pages'>
                 <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
-                    <Image src='prev-btn.svg' alt='' height={25} width={25} />
+                    <Image src='/prev-btn.svg' alt='' height={25} width={25} />
                 </button>
                 {pages.map((page, index) => (
                     <span
@@ -44,7 +44,7 @@ function Pagination({ totalPosts, postsPerPage, setCurrentPage, currentPage }: p
                     </span>
                 ))}
                 <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === 100}>
-                    <Image src='next-btn.svg' alt='' height={25} width={25} />
+                    <Image src='/next-btn.svg' alt='' height={25} width={25} />
                 </button>
 
             </div>

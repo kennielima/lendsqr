@@ -2,10 +2,9 @@
     border: 0.1px rgba(128, 128, 128, 0.233) solid;
     box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
     width: 25rem;
-    height: 80rem;
+    height: 100%;
     padding: 1.8rem 0rem;
     display: grid;
-    // grid-gap: 1.7rem;
     font-size: 15px;
     font-weight: 400;
     position: sticky;
@@ -13,7 +12,6 @@
     letter-spacing: 0.5px;
     background-color: white;
     overflow-y: scroll;
-    // font-family: Work Sans;
     p {
         margin: 1.4rem 2rem 0.2rem 1.2rem;
         color: #545F7D;
@@ -63,7 +61,7 @@
         height: 0.01px;
         width: 100%;
         // margin: 5rem 0 0 -2rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
         opacity: 40%;
     }
     #dashboard {

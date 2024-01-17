@@ -1,16 +1,18 @@
 .home {
     display: flex;
     overflow: hidden;
-    // height: 20%;
+    height: 43rem;
+    // width: 90rem;
 }
 .user-main {
     // overflow: hidden;
     position: relative;
     margin: 1rem 3rem;
-    width: 100%;
+    width: 80rem;
     height: 40rem;
     letter-spacing: 1px;
     overflow-y: scroll;
+    overflow-x: hidden;
     @media(max-width:940px){
     position: absolute;
     z-index: 0;
@@ -19,5 +21,3 @@
 
     }
 }
-
-

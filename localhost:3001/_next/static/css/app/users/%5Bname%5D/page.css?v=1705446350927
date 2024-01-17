@@ -1,0 +1,407 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/components/Navigation/Header.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header-main {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 100px;
+  border: 0.1px rgba(128, 128, 128, 0.233) solid;
+  box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+  padding: 0 3rem;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+  visibility: 30%;
+  margin-left: -8rem;
+}
+@media (max-width: 1100px) {
+  .search-div {
+    margin-left: 0;
+  }
+}
+@media (max-width: 940px) {
+  .search-div {
+    display: none;
+  }
+}
+.search-div .search-input {
+  width: 350px;
+  height: 40px;
+  border-radius: 6px 0 0 6px;
+  border: 0.5px grey solid;
+  padding-left: 10px;
+}
+.search-div input::placeholder {
+  opacity: 0.8;
+}
+.search-div .search-button {
+  border-radius: 0px 6px 6px 0;
+  border: 0.5px grey solid;
+  background-color: #39CDCC;
+  height: 43px;
+  width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: Roboto;
+  color: #213F7D;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 568px) {
+  .nav-right {
+    display: none;
+  }
+}
+.nav-right #ddown {
+  margin-left: -1rem;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+#menu {
+  display: none;
+}
+@media (max-width: 940px) {
+  #menu {
+    display: flex;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/components/Navigation/SideNav.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.side-nav {
+  border: 0.1px rgba(128, 128, 128, 0.233) solid;
+  box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+  width: 25rem;
+  height: 80rem;
+  padding: 1.8rem 0rem;
+  display: grid;
+  font-size: 15px;
+  font-weight: 400;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  letter-spacing: 0.5px;
+  background-color: white;
+  overflow-y: scroll;
+}
+.side-nav p {
+  margin: 1.4rem 2rem 0.2rem 1.2rem;
+  color: #545F7D;
+  font-weight: 500;
+}
+.side-nav span {
+  margin-left: 0.8rem;
+  color: #213F7D;
+  font-weight: 400;
+  opacity: 70%;
+  cursor: pointer;
+}
+.side-nav a {
+  text-decoration: none;
+}
+
+@media (max-width: 940px) {
+  .showSideNav {
+    display: grid;
+    width: 18rem;
+  }
+  .hideSideNav {
+    display: none;
+  }
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem;
+}
+
+.nav-link:hover,
+.user-span {
+  background-color: rgba(57, 205, 205, 0.1843137255);
+}
+.nav-link:hover span,
+.user-span span {
+  opacity: 100%;
+  font-weight: 600;
+}
+
+#dropdown {
+  margin-left: 0.4rem;
+}
+
+#line {
+  color: #545F7D;
+  height: 0.01px;
+  width: 100%;
+  margin-top: 5rem;
+  opacity: 40%;
+}
+
+#dashboard {
+  margin-bottom: -0.5rem;
+  margin-top: 0.8rem;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/components/Layout/Home.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.home {
+  display: flex;
+  overflow: hidden;
+}
+
+.user-main {
+  position: relative;
+  margin: 1rem 3rem;
+  width: 100%;
+  height: 40rem;
+  letter-spacing: 1px;
+  overflow-y: scroll;
+}
+@media (max-width: 940px) {
+  .user-main {
+    position: absolute;
+    z-index: 0;
+    width: 90%;
+    margin: 2rem 3rem;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/app/users/[name]/page.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.main-div {
+  margin: 1rem 0;
+  height: 100%;
+}
+.main-div a {
+  text-decoration: none;
+}
+
+.back {
+  display: flex;
+  align-content: center;
+}
+.back span {
+  color: #545F7D;
+  font-size: 16px;
+  font-weight: 400px;
+  letter-spacing: 0.5px;
+}
+
+.hdr-div {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .hdr-div {
+    display: grid;
+  }
+}
+.hdr-div h2 {
+  color: #213F7D;
+  font-weight: 500;
+  size: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.buttons button {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+.buttons #blist {
+  color: #E4033B;
+  border: 1px solid #E4033B;
+}
+.buttons #active {
+  color: #39CDCC;
+  border: 1px solid #39CDCC;
+}
+
+.summary,
+.detail-body {
+  display: grid;
+  height: auto;
+  border: 0.05px rgba(128, 128, 128, 0.233) solid;
+  box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
+  border-radius: 4px;
+  padding: 1.5rem 1rem 0rem 2rem;
+}
+
+.image-div {
+  display: flex;
+  width: 70%;
+}
+@media (max-width: 1200px) {
+  .image-div {
+    width: 100%;
+  }
+}
+.image-div #avi {
+  margin-right: 1.5rem;
+}
+.image-div #avi img {
+  border-radius: 50%;
+}
+.image-div hr {
+  border: 0.5px solid #545F7D;
+  opacity: 20%;
+}
+.image-div h3 {
+  color: #213F7D;
+  font-weight: 500;
+  font-size: 20px;
+}
+.image-div #tier {
+  margin-top: 1.3rem;
+  color: #545F7D;
+  font-size: 14px;
+  font-weight: 500;
+}
+.image-div #code {
+  color: #545F7D;
+  font-size: 14px;
+  font-weight: 400;
+}
+.image-div #bank {
+  color: #213F7D;
+  font-size: 12px;
+  font-weight: 400;
+}
+.image-div #images {
+  display: flex;
+  gap: 2px;
+}
+@media (max-width: 650px) {
+  .image-div {
+    display: grid;
+    justify-content: center;
+    grid-gap: 0;
+    text-align: center;
+  }
+  .image-div hr {
+    display: none;
+  }
+  .image-div #code, .image-div #bank, .image-div h3 {
+    margin-bottom: 0;
+  }
+  .image-div #avi {
+    margin-left: 1.2rem;
+  }
+  .image-div #images {
+    margin-left: 3.5rem;
+  }
+}
+
+.headings {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 2rem 1rem 0 1rem;
+  color: black;
+  letter-spacing: 0.3px;
+  margin-bottom: -5px;
+}
+@media (max-width: 700px) {
+  .headings {
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .headings .other-hdrs {
+    display: none;
+  }
+}
+.headings #general {
+  color: #39CDCC;
+  display: grid;
+  margin-bottom: -5px;
+  cursor: pointer;
+}
+.headings #general span {
+  width: 3rem;
+  height: 1px;
+  color: #39CDCC;
+  border: 1px solid #39CDCC;
+  background-color: #39CDCC;
+  padding: 0 3rem;
+  margin-left: -1rem;
+}
+
+.detail-body {
+  margin-top: 1.5rem;
+  width: auto;
+}
+.detail-body h4 {
+  color: #213F7D;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.detail-body .section-div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+@media (max-width: 1200px) {
+  .detail-body .section-div {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 768px) {
+  .detail-body .section-div {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 480px) {
+  .detail-body .section-div {
+    grid-template-columns: auto;
+  }
+}
+.detail-body hr {
+  color: #545F7D;
+  height: 0.01px;
+  width: 100%;
+  opacity: 40%;
+  margin: 1rem 0;
+}
+
+.info-div {
+  color: #545F7D;
+}
+.info-div .info-hdr {
+  font-size: 12px;
+  font-weight: 400;
+}
+.info-div .info {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -5px;
+}

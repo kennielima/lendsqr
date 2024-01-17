@@ -17,10 +17,8 @@ function Home(props: any) {
 
       <div className='home'>
         <SideNav />
-
         <main className='user-main'>
           {props.children}
-          
         </main>
       </div>
     </Fragment>

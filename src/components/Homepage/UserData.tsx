@@ -46,8 +46,9 @@ function UserList() {
                         <th style={{ width: '17%' }}>
                             <span>ORGANIZATION</span>
                             <Image
-                                src='menu2.svg'
+                                src='/menu2.svg'
                                 onClick={showModalFn}
+                                onMouseEnter={showModalFn}
                                 style={{ cursor: 'pointer' }}
                                 alt=''
                                 height={15}
@@ -56,23 +57,23 @@ function UserList() {
                         </th>
                         <th style={{ width: '14%' }}>
                             <span id='name'>USERNAME</span>
-                            <Image src='menu2.svg' alt='' height={15} width={15} />
+                            <Image src='/menu2.svg' alt='' height={15} width={15} />
                         </th>
                         <th style={{ width: '22%' }}>
                             <span id='email'>EMAIL</span>
-                            <Image src='menu2.svg' alt='' height={15} width={15} />
+                            <Image src='/menu2.svg' alt='' height={15} width={15} />
                         </th>
                         <th style={{ width: '17%' }}>
                             <span>PHONE NUMBER</span>
-                            <Image src='menu2.svg' alt='' height={15} width={15} />
+                            <Image src='/menu2.svg' alt='' height={15} width={15} />
                         </th>
                         <th style={{ width: '17%' }}>
                             <span>DATE JOINED</span>
-                            <Image src='menu2.svg' alt='' height={15} width={15} />
+                            <Image src='/menu2.svg' alt='' height={15} width={15} />
                         </th>
                         <th style={{ width: '8%' }}>
                             <span>STATUS</span>
-                            <Image src='menu2.svg' alt='' height={15} width={15} />
+                            <Image src='/menu2.svg' alt='' height={15} width={15} />
                         </th>
                         <th style={{ width: '3%' }}>
                             <span></span>
@@ -82,35 +83,28 @@ function UserList() {
                 <tbody>
                     {currentPosts.map((data: data, index: number) => (
                         <Fragment>
+                            <Link href={`users/${data.name}`}>
                             <tr className='table-row' key={index}>
-                                <td style={{ width: '17%' }}>
-                                    <Link href={`users/${data.name}`}>{data.company}</Link>
-                                </td>
-                                <td style={{ width: '14%' }}>
-                                    <Link href={`users/${data.name}`}>{data.name}</Link>
-                                </td>
-                                <td style={{ width: '22%' }}>
-                                    <Link href={`users/${data.name}`}>{data.email}</Link>
-                                </td>
-                                <td style={{ width: '17%' }}>
-                                    <Link href={`users/${data.name}`}>{data.phone}</Link>
-                                </td>
-                                <td style={{ width: '17%' }}>
-                                    <Link href={`users/${data.name}`}>{data.registered}</Link>
-                                </td>
+                                <td style={{ width: '17%' }}>{data.company}</td>
+                                <td style={{ width: '14%' }}>{data.name}</td>
+                                <td style={{ width: '22%' }}>{data.email}</td>
+                                <td style={{ width: '17%' }}>{data.phone}</td>
+                                <td style={{ width: '17%' }}>{data.registered}</td>
                                 <td style={{ width: '8%' }} id={`${data.status}`}>{data.status}</td>
                                 <td style={{ width: '3%', textAlign: 'right', position: 'relative' }}>
                                     <Image
-                                        src='dots.svg'
+                                        src='/dots.svg'
                                         alt=''
-                                        onClick={() => openPopUp(index)}
+                                        onClick={(e) => { e.preventDefault(); openPopUp(index)}}
+                                        onMouseEnter={() => openPopUp(index)}
                                         height={15}
                                         width={15}
                                         style={{ cursor: 'pointer' }}
                                     />
-                                    {openIndexPopUp === index && <PopUp index={index} data={data} hide={hidePopUp} />}
+                                    {openIndexPopUp === index && <PopUp data={data} hide={hidePopUp} />}
                                 </td>
                             </tr>
+                            </Link>
                             <hr id='liner' />
                         </Fragment>
                     ))}

@@ -44,12 +44,12 @@ const Login = () => {
       {loading ? null : !ctx.loggedin ? (
         <div className='body'>
           <div className='imagediv'>
-            <Image src='logo.svg' alt='' id='logo' height={200} width={200} />
-            <Image src='login.svg' alt='' id='hero' height={600} width={600} />
+            <Image src='/logo.svg' alt='' id='logo' height={200} width={200} />
+            <Image src='/login.svg' alt='' id='hero' height={600} width={600} />
           </div>
 
           <div className='formdiv'>
-            <Image src='logo.svg' alt='' id='logo2' height={200} width={200} />
+            <Image src='/logo.svg' alt='' id='logo2' height={200} width={200} />
             <h1 id='welcome'>Welcome!</h1>
             <p id='enter'> Enter Details to login.</p>
 

@@ -1,6 +1,8 @@
 .main-div {
     margin: 1rem 0;
     height: 100%;
+    justify-content: center;
+
     a {
         text-decoration: none;
     }
@@ -144,8 +146,15 @@
     color: black;
     letter-spacing: 0.3px;
     margin-bottom: -5px;
-    // overflow: scroll;
-    // width: 60rem;
+    @media(max-width: 1028px){
+    font-size: 15px;
+    }
+    @media(max-width: 700px){
+    margin-bottom: 5px;
+    justify-content: center;
+    .other-hdrs{
+       display: none; 
+    }}
     #general {
         color: #39CDCC;
         display: grid;
