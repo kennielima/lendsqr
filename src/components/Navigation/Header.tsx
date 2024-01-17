@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useContext, useState } from 'react'
 import './Header.scss'
 import textContext from '../ContextProvider/Context'
+import Link from 'next/link'
 const Header = () => {
     const ctx = useContext(textContext);
     const [openNav, setOpenNav] = useState(false);
@@ -21,7 +22,9 @@ const Header = () => {
             </div>
             <div className='right'>
                 <div className='nav-right'>
-                    <p style={{ fontFamily: 'Roboto' }}><u>Docs</u></p>
+                    <p style={{ fontFamily: 'Roboto' }}>
+                        <Link href='/Project-Review.pdf' style={{color: '#213F7D'}}>Docs</Link>
+                    </p>
                     <Image src='/bell.svg' alt='' height={25} width={25} />
                     <Image src='/avatar.svg' className='avi' alt='' height={35} width={35} />
                     <p className='avi'>Adedeji</p>

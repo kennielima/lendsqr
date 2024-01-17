@@ -1,15 +1,15 @@
 .user-table {
-    // position: absolute;
     color: #545F7D;
-    width: 65.6rem;
     height: auto;
     border: 0.05px rgba(128, 128, 128, 0.233) solid;
     box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.055);
     border-radius: 4px;
     margin: 2rem 0;
     text-align: start;
-    // width: auto;
+    // width: 65.6rem;
+    width: 100%;
     overflow-x: scroll;
+    white-space: nowrap;
     padding-bottom: 0rem;
     a {
         text-decoration: none; 
@@ -19,8 +19,13 @@
         padding: 0;
       }
 }
+.user-table-container {
+    width: 100%;
+    overflow-x: scroll;
+}
 
 .table-head {
+    white-space: nowrap;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -39,6 +44,7 @@
 
 
 .table-row {
+    white-space: nowrap;
     display: flex;
     justify-content: space-between;
     align-items: center;

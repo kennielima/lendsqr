@@ -4,7 +4,13 @@
     justify-content: space-between;
     align-items: center;
     color: #545F7D;
-
+@media(max-width:586px){
+    display: grid;
+    justify-content: center;
+    #select-div {
+        padding-left: 2rem;
+    }
+}
     #select-div {
     letter-spacing: 0.3px;
         display: flex;

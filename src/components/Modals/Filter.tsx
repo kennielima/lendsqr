@@ -28,7 +28,7 @@ function Organization({hide}: props) {
             </div>
             <div className='input-div'>
                 <label htmlFor='date'>Date</label>
-                <input placeholder='Date' />
+                <input placeholder='MM/DD/YYYY' />
             </div>
             <div className='input-div'>
                 <label htmlFor='name'>Phone number</label>

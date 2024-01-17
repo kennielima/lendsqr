@@ -40,16 +40,17 @@ function UserList() {
         <Home>
             <UserSummary />
             {showModal && <Filter hide={hideModalFn} />}
+            <div className='user-table-container'>
             <table className='user-table'>
                 <thead>
                     <tr className='table-head'>
-                        <th style={{ width: '17%' }}>
+                        <th style={{ width: '17%', cursor: 'pointer' }}
+                            onClick={showModalFn}
+                            onMouseEnter={showModalFn}
+                            >
                             <span>ORGANIZATION</span>
                             <Image
                                 src='/menu2.svg'
-                                onClick={showModalFn}
-                                onMouseEnter={showModalFn}
-                                style={{ cursor: 'pointer' }}
                                 alt=''
                                 height={15}
                                 width={15}
@@ -84,32 +85,33 @@ function UserList() {
                     {currentPosts.map((data: data, index: number) => (
                         <Fragment>
                             <Link href={`users/${data.name}`}>
-                            <tr className='table-row' key={index}>
-                                <td style={{ width: '17%' }}>{data.company}</td>
-                                <td style={{ width: '14%' }}>{data.name}</td>
-                                <td style={{ width: '22%' }}>{data.email}</td>
-                                <td style={{ width: '17%' }}>{data.phone}</td>
-                                <td style={{ width: '17%' }}>{data.registered}</td>
-                                <td style={{ width: '8%' }} id={`${data.status}`}>{data.status}</td>
-                                <td style={{ width: '3%', textAlign: 'right', position: 'relative' }}>
-                                    <Image
-                                        src='/dots.svg'
-                                        alt=''
-                                        onClick={(e) => { e.preventDefault(); openPopUp(index)}}
-                                        onMouseEnter={() => openPopUp(index)}
-                                        height={15}
-                                        width={15}
-                                        style={{ cursor: 'pointer' }}
-                                    />
-                                    {openIndexPopUp === index && <PopUp data={data} hide={hidePopUp} />}
-                                </td>
-                            </tr>
+                                <tr className='table-row' key={index}>
+                                    <td style={{ width: '17%' }}>{data.company}</td>
+                                    <td style={{ width: '14%' }}>{data.name}</td>
+                                    <td style={{ width: '22%' }}>{data.email}</td>
+                                    <td style={{ width: '17%' }}>{data.phone}</td>
+                                    <td style={{ width: '17%' }}>{data.registered}</td>
+                                    <td style={{ width: '8%' }} id={`${data.status}`}>{data.status}</td>
+                                    <td style={{ width: '3%', textAlign: 'right', position: 'relative' }}>
+                                        <Image
+                                            src='/dots.svg'
+                                            alt=''
+                                            onClick={(e) => { e.preventDefault(); openPopUp(index) }}
+                                            onMouseEnter={() => openPopUp(index)}
+                                            height={15}
+                                            width={15}
+                                            style={{ cursor: 'pointer' }}
+                                        />
+                                        {openIndexPopUp === index && <PopUp data={data} hide={hidePopUp} />}
+                                    </td>
+                                </tr>
                             </Link>
                             <hr id='liner' />
                         </Fragment>
                     ))}
                 </tbody>
             </table>
+            </div>
 
             <Pagination
                 totalPosts={DATA.length}
