@@ -6,8 +6,8 @@
     border-radius: 4px;
     margin: 2rem 0;
     text-align: start;
-    // width: 65.6rem;
-    width: 100%;
+    width: 60.6rem;
+    // width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
     padding-bottom: 0rem;
@@ -25,7 +25,6 @@
 }
 
 .table-head {
-    white-space: nowrap;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -43,8 +42,11 @@
 }
 
 
-.table-row {
+.user-table, thead, tbody {
     white-space: nowrap;
+}
+
+.table-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
