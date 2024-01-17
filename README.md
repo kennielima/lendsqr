@@ -71,7 +71,7 @@ The page component displays detailed information about each user, including gene
 The Organization Filter component identified by the organization header on the userlist table allows users to filter users based on organization, username, email, date, phone number, and status.
 
 9. Header Component
-The Header component provides essential features for navigation and user interaction like a search functionality and a responsive Menu Toggle allowing users to open or close the navigation sidebar.
+The Header component provides essential features for navigation and user interaction like a search functionality and a responsive Menu Toggle allowing users to open or close the navigation sidebar. The Project Review can be found by clicking on the Docs
 
 10. SideNav Component
 The SideNav component provides an organized sidebar for navigating through various sections and includes the The log out functionality allowing users log out

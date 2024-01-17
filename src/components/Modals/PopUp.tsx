@@ -20,11 +20,11 @@ type props = {
                 </div>
             </Link>
             <div onClick={() => {data.status = 'Blacklisted'}}>
-                <Image src='/Blacklist.svg' alt='' height={15} width={15} />
+                <Image src='/blacklist.svg' alt='' height={15} width={15} />
                 <span>Blacklist User</span>
             </div>
             <div>
-                <Image src='/Activate.svg' alt='' height={15} width={15} />
+                <Image src='/activate.svg' alt='' height={15} width={15} />
                 <span>Activate User</span>
             </div>
         </div>
