@@ -14,7 +14,6 @@ function Pagination({ totalPosts, postsPerPage, setCurrentPage, currentPage }: p
     for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
         pages.push(i)
     }
-    console.log(currentPage)
     return (
         <div className='pagination'>
             <div id='select-div'>
